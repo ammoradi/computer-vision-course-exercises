@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CV - HW1</title>
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/">
+</head>
+
+<body>
+    <h2>Hello OpenCV.js</h2>
+    <p id="status">OpenCV.js is loading...</p>
+    <div>
+        <div class="inputoutput">
+            <img id="imageSrc" alt="No Image" />
+            <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
+        </div>
+        <div class="inputoutput">
+            <canvas id="canvasOutput"></canvas>
+            <div class="caption">canvasOutput</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+    <script async src="lib/opencv/opencv-3.4.3.min.js" onload="onOpenCvReady();" type="text/javascript"></script>
+</body>
+
+</html>
