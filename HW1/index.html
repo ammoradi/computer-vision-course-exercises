@@ -4,20 +4,33 @@
 <head>
     <meta charset="utf-8">
     <title>CV - HW1</title>
-    <link rel="stylesheet" type="text/css" href="lib/bootstrap/">
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-    <h2>Hello OpenCV.js</h2>
-    <p id="status">OpenCV.js is loading...</p>
-    <div>
-        <div class="inputoutput">
-            <img id="imageSrc" alt="No Image" />
-            <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
+    <div class="container">
+        <h2 class="text-center">Home Work 1</h2>
+        <p id="status">OpenCV.js is loading...</p>
+        <div class="inputBox">
+            <div class="inputoutput">
+                <img id="imageSrc" alt="No Image" />
+                <div class="caption">imageSrc <input type="file" id="fileInput" name="file" /></div>
+            </div>
         </div>
-        <div class="inputoutput">
-            <canvas id="canvasOutput"></canvas>
-            <div class="caption">canvasOutput</div>
+        <div class="row">
+            <div class="inputoutput col-sm">
+                <canvas id="redChannel"></canvas>
+                <p class="caption">red channel</p>
+            </div>
+            <div class="inputoutput col-sm">
+                <canvas id="greenChannel"></canvas>
+                <p class="caption">green channel</p>
+            </div>
+            <div class="inputoutput col-sm">
+                <canvas id="blueChannel"></canvas>
+                <p class="caption">blue channel</p>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="app.js"></script>
