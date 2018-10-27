@@ -1,19 +1,20 @@
 What the program does?:
 =============
-* read static image from directory
-* uses Opencv's Built-in Neat Image noise reduction [cv.fastNlMeansDenoising()](https://docs.opencv.org/3.4.3/d1/d79/group__photo__denoise.html#ga4c6b0031f56ea3f98f768881279ffe93)
-* show denoised image
+* read two static images from directory
+* *Homogeneous blur:* uses [cv.blur()](https://docs.opencv.org/3.4.3/d4/d86/group__imgproc__filter.html#ga8c45db9afe636703801b0b2e440fce37)
+* *Guassian blur:* uses [cv.GaussianBlur()](https://docs.opencv.org/3.4.3/d4/d86/group__imgproc__filter.html#gaabe8c836e97159a9193fb0b11ac52cf1)
+* *Median blur:* uses [cv.medianBlur()](https://docs.opencv.org/3.4.3/d4/d86/group__imgproc__filter.html#ga564869aa33e58769b4469101aac458f9)
+* show six output images => 3 algorithms of two image
+* save six output images
 
 How to run?:
 =============
 * run app.py file by following command: `$ python3.6 app.py`
 
-Limitation:
-=============
-only supports grayscale images.
-to support colored image change `fastNlMeansDenoising()` function with `fastNlMeansDenoisingColored()` in app.js file [See Differences](https://docs.opencv.org/3.4.3/d1/d79/group__photo__denoise.html#ga03aa4189fc3e31dafd638d90de335617)
-
 Refrences:
 =============
-* [OpenCv Denoising](https://docs.opencv.org/3.4.3/d5/d69/tutorial_py_non_local_means.html)
-* [Neat Image](https://ni.neatvideo.com/overview/how-does-it-work)
+* [OpenCv Image Smoothing](https://docs.opencv.org/3.4.3/dc/dd3/tutorial_gausian_median_blur_bilateral_filter.html)
+
+Notation:
+=============
+* this program uses _*Homogeneous blur*_ and _*Guassian blur*_ as *Smoother*s

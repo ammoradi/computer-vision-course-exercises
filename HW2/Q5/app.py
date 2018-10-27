@@ -15,6 +15,10 @@ dst2 = cv.addWeighted(src1, alpha, src2, beta, 0.0)
 alpha = 0.4 # src1's weight
 beta = 0.6 # src2's weight
 dst3 = cv.addWeighted(src1, alpha, src2, beta, 0.0)
+# [save]
+cv.imwrite('50% 3.jpg - 50% 4.jpg',dst1)
+cv.imwrite('60% 3.jpg - 40% 4.jpg',dst2)
+cv.imwrite('40% 3.jpg - 60% 4.jpg',dst3)
 # [display]
 cv.imshow('50% 3.jpg - 50% 4.jpg', dst1)
 cv.imshow('60% 3.jpg - 40% 4.jpg', dst2)
