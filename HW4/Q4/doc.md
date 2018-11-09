@@ -1,19 +1,13 @@
 What the program does?:
 =============
 * read static image from directory
-* uses Opencv's Built-in Neat Image noise reduction [cv.fastNlMeansDenoising()](https://docs.opencv.org/3.4.3/d1/d79/group__photo__denoise.html#ga4c6b0031f56ea3f98f768881279ffe93)
-* show denoised image
+* uses Opencv's Built-in fitLine function [cv::fitLine()](https://docs.opencv.org/2.4/modules/imgproc/doc/structural_analysis_and_shape_descriptors.html) to find line parameters and draw using RANSAC algorithm
+* show output image
 
 How to run?:
 =============
-* run app.py file by following command: `$ python3.6 app.py`
-
-Limitation:
-=============
-only supports grayscale images.
-to support colored image change `fastNlMeansDenoising()` function with `fastNlMeansDenoisingColored()` in app.js file [See Differences](https://docs.opencv.org/3.4.3/d1/d79/group__photo__denoise.html#ga03aa4189fc3e31dafd638d90de335617)
+* run app.cpp by following commands in the [link](https://www.learnopencv.com/how-to-compile-opencv-sample-code/)
 
 Refrences:
 =============
-* [OpenCv Denoising](https://docs.opencv.org/3.4.3/d5/d69/tutorial_py_non_local_means.html)
-* [Neat Image](https://ni.neatvideo.com/overview/how-does-it-work)
+it was HARD to find the refrences for what we wanted ! HARD Question ...!
