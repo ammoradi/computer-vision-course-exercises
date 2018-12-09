@@ -1,0 +1,36 @@
+#######################START########################
+Reading train dataset (Train 60000.cdb)...
+Reading test dataset (Test 20000.cdb)...
+Reading remaining samples dataset (RemainingSamples.cdb)...
+
+Training: START...
+Training: END (5.1975250244140625e-05 seconds)
+
+Testing: START...
+Testing: END (221.64278960227966 seconds)
+Actual labels: [0. 0. 0. ... 9. 9. 9.]
+Predicted labels: [0. 0. 0. ... 1. 9. 9.]
+False positives: 938
+False negatives: 938
+True positives: 19062
+True negatives: 179062
+
+Accuracy: (true positives + true negatives) / (test size) * 100 = 99.062% 
+
+append Test Data to Train Data for increasing accuracy.
+Remaining Dataset will be used for new Test.
+
+Training: START...
+Training: END (0.13271498680114746 seconds)
+
+Testing: START...
+Testing: END (332.5788896083832 seconds)
+Actual labels: [4. 1. 6. ... 0. 8. 9.]
+Predicted labels: [2. 1. 9. ... 0. 8. 9.]
+False positives: 746
+False negatives: 746
+True positives: 21606
+True negatives: 200422
+
+Accuracy: (true positives + true negatives) / (test size) * 100 = 99.33249821045096% 
+########################END#########################
