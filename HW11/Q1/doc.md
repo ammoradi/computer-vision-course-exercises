@@ -64,3 +64,10 @@ Datasets Design
 * **Train Sets** : all images and labels of the `/DigitDB/Train 60000.cdb` used for model learning.
 * **Validation Sets** : all images and labels of the `/DigitDB/RemainingSamples.cdb` used for model evaluation (about 22000 sets).
 * **Test Sets** : few random numbers of `/DigitDB/Test 20000.cdb` used for model testing (you can change it. see line 113 of main.py).
+
+References
+-------------------
+* [Learning Keras](https://www.pyimagesearch.com/2018/09/10/keras-tutorial-how-to-get-started-with-keras-deep-learning-and-python/)
+* [Lenet implementation for MNIST dataset](https://www.pyimagesearch.com/2016/08/01/lenet-convolutional-neural-network-in-python/)
+* [DataSet Inhancment](https://www.pyimagesearch.com/2018/12/24/how-to-use-keras-fit-and-fit_generator-a-hands-on-tutorial/)
+* [LeNet understanding](https://medium.com/@mgazar/lenet-5-in-9-lines-of-code-using-keras-ac99294c8086)
