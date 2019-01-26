@@ -19,6 +19,7 @@ testData, testLabels = read_hoda_dataset('./DigitDB/Test 20000.cdb')
 
 
 # handle matrix for when Keras is using "channels first" ordering (Theano).
+# see this: https://stackoverflow.com/questions/39815518/keras-maxpooling2d-layer-gives-valueerror
 if K.image_data_format() == "channels_first":
 	trainData = trainData.reshape((trainData.shape[0], 1, 32, 32))
 	validationData = validationData.reshape((validationData.shape[0], 1, 32, 32))
@@ -81,7 +82,7 @@ model.summary()
 # uncomment below line for using "pre-trained" model's weights.
 # model.load_weights('weights.hdf5')
 
-
+# you can use SGD(RATE) instead of Adam() for model optimization
 model.compile(loss="categorical_crossentropy", optimizer=Adam(), metrics=['accuracy'])
 
 print("Training...")
