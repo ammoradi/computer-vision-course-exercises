@@ -12,3 +12,8 @@ document(paper) as output by following steps:
 * show and save the rectangle result
 
 NOTE: _uncomment lines 109 and 110 of `main.py` to have scanned like document_
+
+
+Reference
+---------
+* [https://github.com/andrewdcampbell/OpenCV-Document-Scanner](https://github.com/andrewdcampbell/OpenCV-Document-Scanner)
