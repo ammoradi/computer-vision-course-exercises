@@ -1,0 +1,150 @@
+#######################START########################
+Running Generator on: {
+  "input_shape": [
+    32,
+    32,
+    1
+  ],
+  "conv_layers": {
+    "1": {
+      "filters_number": 6,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation_function": "relu"
+    },
+    "2": {
+      "filters_number": 16,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation_function": "relu"
+    }
+  },
+  "connected_layers": {
+    "1": {
+      "units": 120,
+      "activation_function": "relu"
+    },
+    "2": {
+      "units": 84,
+      "activation_function": "relu"
+    },
+    "3": {
+      "units": 10,
+      "activation_function": "softmax"
+    }
+  },
+  "loss_method": "categorical_crossentropy",
+  "optimizer": "Adam",
+  "data_augmentation_method": "ImageDataGenerator",
+  "epochs": 10,
+  "batch_size": 32
+}
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_1 (Conv2D)            (None, 30, 30, 6)         60        
+_________________________________________________________________
+average_pooling2d_1 (Average (None, 15, 15, 6)         0         
+_________________________________________________________________
+conv2d_2 (Conv2D)            (None, 13, 13, 16)        880       
+_________________________________________________________________
+average_pooling2d_2 (Average (None, 6, 6, 16)          0         
+_________________________________________________________________
+flatten_1 (Flatten)          (None, 576)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 120)               69240     
+_________________________________________________________________
+dense_2 (Dense)              (None, 84)                10164     
+_________________________________________________________________
+dense_3 (Dense)              (None, 10)                850       
+=================================================================
+Total params: 81,194
+Trainable params: 81,194
+Non-trainable params: 0
+_________________________________________________________________
+model accuracy: 90.70%
+total time: 234.1063916683197 seconds
+
+
+Running Generator on: {
+  "input_shape": [
+    32,
+    32,
+    1
+  ],
+  "conv_layers": {
+    "1": {
+      "filters_number": 6,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation_function": "relu"
+    },
+    "2": {
+      "filters_number": 16,
+      "kernel_size": [
+        3,
+        3
+      ],
+      "activation_function": "relu"
+    }
+  },
+  "connected_layers": {
+    "1": {
+      "units": 120,
+      "activation_function": "relu"
+    },
+    "2": {
+      "units": 84,
+      "activation_function": "relu"
+    },
+    "3": {
+      "units": 51,
+      "activation_function": "relu"
+    },
+    "4": {
+      "units": 10,
+      "activation_function": "softmax"
+    }
+  },
+  "loss_method": "categorical_crossentropy",
+  "optimizer": "Adam",
+  "data_augmentation_method": "ImageDataGenerator",
+  "epochs": 10,
+  "batch_size": 32
+}
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_3 (Conv2D)            (None, 30, 30, 6)         60        
+_________________________________________________________________
+average_pooling2d_3 (Average (None, 15, 15, 6)         0         
+_________________________________________________________________
+conv2d_4 (Conv2D)            (None, 13, 13, 16)        880       
+_________________________________________________________________
+average_pooling2d_4 (Average (None, 6, 6, 16)          0         
+_________________________________________________________________
+flatten_2 (Flatten)          (None, 576)               0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 120)               69240     
+_________________________________________________________________
+dense_5 (Dense)              (None, 84)                10164     
+_________________________________________________________________
+dense_6 (Dense)              (None, 51)                4335      
+_________________________________________________________________
+dense_7 (Dense)              (None, 10)                520       
+=================================================================
+Total params: 85,199
+Trainable params: 85,199
+Non-trainable params: 0
+_________________________________________________________________
+model accuracy: 10.13%
+total time: 227.62063479423523 seconds
+
+
+#######################END#########################
